@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="10.005" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="API CRUD testing with JSONPlaceholder using DataTable" name="CRUD operations with DataTable" time="9.516">
+<system-out><![CDATA[
+Given I have a base URI of "https://jsonplaceholder.typicode.com"...........passed
+When I perform the following operations:....................................passed
+Then I should receive the following status codes:...........................passed
+And each response time should be less than 3000 milliseconds................passed
+]]></system-out>
+</testcase>
+</testsuite>

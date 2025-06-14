@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="113.669" tests="4" skipped="0" failures="2" errors="0">
+<testcase classname="User Login" name="Login with valid credentials - Example #1.1" time="24.84">
+<system-out><![CDATA[
+Given user is on the login page.............................................passed
+When the user enters email as "satyamsingh8809793391@gmail.com" and password "satyam@1234" and click login button.passed
+Then user should be logged in successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login with invalid credentials - Example #1.1" time="28.317">
+<system-out><![CDATA[
+Given user is on the login page.............................................passed
+When the user enters email as "satyamsing8809793391@gmail.com" and password "test@123456" and click login button.passed
+Then user should get error message..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Place Order" name="Successful book purchase - Example #1.1" time="33.745">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),'Shipping')]&quot;}
+  (Session info: chrome=137.0.7151.104)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5d0507a91e69328102d0e22e5b2a43d2, findElement {using=xpath, value=//div[contains(text(),'Shipping')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\amita\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54583}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54583/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5d0507a91e69328102d0e22e5b2a43d2">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Shipping')]"}
+  (Session info: chrome=137.0.7151.104)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5d0507a91e69328102d0e22e5b2a43d2, findElement {using=xpath, value=//div[contains(text(),'Shipping')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\amita\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54583}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54583/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5d0507a91e69328102d0e22e5b2a43d2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at pages.PlaceOrderPage.isShippingVisible(PlaceOrderPage.java:83)
+	at stepDefinitions.PlaceOrderSteps.user_proceed_to_checkout(PlaceOrderSteps.java:94)
+	at ✽.user proceed to checkout(file:///C:/Eclips/CapstoneProjectBooksWagon/src/test/resources/features/placeOrder.feature:10)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is on the login page.............................................passed
+When the user enters email as "satyamsingh8809793391@gmail.com" and password "satyam@1234" and click login button.passed
+Then user should be logged in successfull...................................passed
+When user search for "Selenium".............................................passed
+And user add the first result to cart.......................................passed
+And user view my cart.......................................................passed
+And user proceed to checkout................................................failed
+When user enters address details............................................skipped
+And user enters pincode "600042"............................................skipped
+And user is redirected to review page.......................................skipped
+And user completes checkout.................................................skipped
+Then user should see logout successfully....................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Place Order" name="Failed book purchase due to payment error - Example #1.1" time="25.873">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[java]&gt; but was:&lt;[dummy text]&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[java]> but was:<[dummy text]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitions.PlaceOrderSteps.user_search_for(PlaceOrderSteps.java:69)
+	at ✽.user search for "Java"(file:///C:/Eclips/CapstoneProjectBooksWagon/src/test/resources/features/placeOrder.feature:24)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is on the login page.............................................passed
+When the user enters email as "satyamsingh8809793391@gmail.com" and password "satyam@1234" and click login button.passed
+When user search for "Java".................................................failed
+And user add the first result to cart.......................................skipped
+And user view my cart.......................................................skipped
+And user proceed to checkout................................................skipped
+When user enters address details............................................skipped
+And user enters pincode "123"...............................................skipped
+Then user should see error message on checkout..............................skipped
+]]></system-out>
+</testcase>
+</testsuite>
